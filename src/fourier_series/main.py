@@ -5,7 +5,7 @@ import typer
 from fourier_series.animation import animate
 from fourier_series.logic import fourier_coeficient, sample_svg
 
-cli = typer.Typer()
+cli = typer.Typer(add_completion=False)
 
 
 @cli.command()
