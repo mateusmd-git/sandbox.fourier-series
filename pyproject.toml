@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=74"]
+
+[project]
+name="fourier-series"
+description="A simple demonstration of the Fourier Series applied to 2D image reconstruction."
+version="26.0.1"
+
+dependencies=[
+    "numpy~=2.2",
+    "matplotlib~=3.10",
+    "svgpathtools~=1.6",
+    "typer~=0.24",
+]
+requires-python=">=3.8"
+
+authors=[{name="Mateus M."}]
+
+readme="README.md"
+license="MIT"
+license-files=["LICEN[SC]E.*"]
+
+[project.urls]
+Repository="https://github.com/mateusmd-git/sandbox.fourier-series"
+
+[project.scripts]
+fourier="fourier_series.main:cli"
